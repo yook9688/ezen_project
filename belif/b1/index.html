@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:::belif에 오신 것을 환영합니다:::</title> <!--2020-05-26 화면구현 짜놓은 것. 맞는지는 미지수-->
+    <meta name="title" content="belif">
+    <meta name="author" content="hyeonseok Yuk">
+    <meta name="keywords" content="belif, 빌리프, 화장품, 자연, 유기농">
+    <meta property="og:tltle" content="모바일belif">
+    <meta property="og:description" content="belif는 고객님께 최상의 품질과 유기농 재료로 보답하겠습니다.">
+    <meta property="og:image" content="http://www.belifcosmetic.com/images/common/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR" rel="stylesheet">
+    <!-- 최적화 -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        /* font-family: 'Noto Sans KR', sans-serif; */
+    /* 초기화 설정 */    
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; min-width:1280px; font-family: 'Noto Sans KR', sans-serif; }
+    ul {list-style : none;}
+    a { text-decoration: none; }
+
+    /*공통 스타일 */
+    .wrap {width: 100%;}
+    .hd {clear: both; width: 100%;}
+    .hd_top_wrap {clear: both; width: 100%; border-bottom: solid 1px #333; height: 25px; line-height: 25px;}
+    .hd_bottom_wrap {clear: both; width: 100%; }
+    .tnb {width: 1280px; margin: 0 auto;  }
+    .tnb .left {float: left;}
+    .tnb .right {float: right;}
+    .tnb li {float: left; }
+    .tnb .left li {padding-right: 30px; border-left: solid 1px #ccc;}
+    .tnb .right li {padding-left: 20px;}
+    .tnb .left li a {font-size: 12px; padding-left: 15px; display: block; color: #333; }
+    .tnb .right li a {font-size: 10px; display: block; color: #333333;}
+    .tnb .left li a:hover {color: darkcyan;}
+    .tnb .right li a:hover {color: darkcyan}
+    .gnb {clear: both; width: 1280px; margin: 0 auto; position: relative; height: 70px;}
+    .gnb .logo {position: absolute; left: 0; padding-top:20px;}
+    .gnb .menu {width: 500px; margin: 0 auto;}
+    .gnb .menu li {float: left; padding: 25px; font-weight: bold;}
+    .gnb .menu li a {font-size: 17px; color: #333; }
+    .gnb .menu li a:hover {color: deeppink;}
+    .gnb .download {position: absolute; right: 0; margin-top: 20px; background-color: black; color: #fff; 
+        border-radius: 5px; height: 36px; line-height: 36px; font-size: 10px; padding: 0 10px;}
+
+
+    .contents {clear: both; width: 1280px; margin: 0 auto;}
+    .main_vs {clear: both;  width: 100%; overflow-x: hidden; }
+    .ban {clear: both; width: 400%;}
+    .ban li {float: left; width: 25%;}
+    .con_tit1 {clear: both; width: 100%;}
+    .tit { width: 1280px; margin: 0 auto; margin-top: 50px;  text-align: center;}
+    .tit1_l, .tit1_s, .tit1_com {margin-bottom: 15px;}
+    .tit1_l {font-size: 20px; }
+    .page2 {clear:both; width: 100%; }
+    .item_list {clear:both; width: 1280px; margin: 0 auto; }
+    .list {width: 100%; margin-top: 30px;}
+    .list li {width: 250px; float: left; ; ;margin-right: 93px;}
+    .list li:nth-child(4n) {margin-right: 0;}
+    .list li a {display:block; width: 220px;  float:left; margin: 0 auto; color: #333;}
+    .list li img {display:block; width: 150px; margin: 0 auto; padding-bottom: 20px;}
+    .list li a:hover {display:block; width: 220px;  float:left; margin: 0 auto; color: coral;}
+    .list li img:hover {display:block; width: 200px; margin: 0 auto; }
+    .list li p {display:block; width: 200px; margin: 0 auto; height: 65px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
+    .board_main{clear: both; width: 100%; padding-top: 100px; }
+    .board {width: 1280px; margin: 0 auto; }
+    .board a {color: #333;}
+    .board h4 {font-size: 25px ; padding-bottom: 10px;}
+    .left {width: 460px; float:left; margin: 0px 90px; }
+    .right {width: 460px; float: right; margin: 0px 90px; }
+    .news_mini_main_left {float: left; width: 400px; border: solid 1px #999; }
+    .pr_mini_main_right {float: left; width: 400px; border : solid 1px #999;}
+    .news_mini_main_left li {padding: 10px 40px 10px 10px ;}
+    .pr_mini_main_right li {padding: 10px 40px  10px 10px;}
+    
+    
+
+    .ft {clear: both; width: 100%; padding-top: 100px;}
+    .ft_wrap {clear: both; width: 1280px; margin: 0 auto;}
+    .ft_top_wrap {width: 1280px; margin: 0 auto; border-top: 1px solid #999; padding-top: 50px;}
+    .ft_top_wrap li {float: left; text-align: center;  }
+    .ft_top_wrap li:first-child { width: 280px; margin: 0 auto;}
+    .ft_top_wrap li:nth-child(2) { width: 680px; margin: 0 auto;}
+    .ft_top_wrap li:last-child {width: 300px; margin: 0 auto;}
+    .ft_top_wrap span {display: block; padding-top: 15px;}
+    .ft_bottom_wrap {clear: both; width: 500px; margin: 0 auto; padding-top: 50px; padding-bottom: 40px;}
+    .ft_bottom_wrap li {float: left; text-align: center; margin-right: 30px; padding-bottom: 20px;}
+    .ft_bottom_wrap p {text-align: center; }
+
+
+
+    
+    </style>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_top_wrap">
+                <nav class="tnb">
+                    <ul class="left">
+                        <li><a href="">C/S center</a></li>
+                        <li><a href="">COMMUNITY</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="">Login/Join</a></li>
+                        <li><a href="">Cart</a></li>    
+                        <li><a href="">My page</a></li>
+                        <li><a href="">Search</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hd_bottom_wrap">    
+                <nav class="gnb">
+                    <a href="" class="logo"><img src="./사이트사진/logo.png" alt=""></a>
+                    <ul class="menu">
+                        <li><a href="">I am belif</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">REVIEW</a></li>
+                        <li><a href="">EVENT</a></li>
+                    </ul>
+                    <a class="download" href="">3,000 KRW COUPON DOWNLOAD</a>
+                </nav>
+            </div>        
+        </header>
+        <div class="contents">
+            <figure class="main_vs">
+                <ul class="ban">
+                    <li>
+                        <a href="" class="detail"><img src="https://placehold.it/1280x400/#2c8" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="detail"><img src="https://placehold.it/1280x400/#C37" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="detail"><img src="https://placehold.it/1280x400/#BAD" alt=""></a>
+                    </li>
+                </ul>
+            </figure>
+        </div>
+        <section>
+        <div class="con_tit1">
+            <div class="tit">
+                <h4 class="tit1_l">BEST PRODUCTS</h4>
+                <h2 class="tit1_s">빌리프 베스트상품</h2>
+                <p class="tit1 com">제일 잘나가는 상품</p>
+            </div>
+        </div>
+        </section>
+        <section class="page2"> 
+            <div class="item_list">
+                <ul class="list">
+                    <li class= "item1">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab1_off.gif" alt="">
+                            <p>메마른 피부 위의 오아시스! <br>건조한 피부의 불편함도 가라앉힌 힘. 컴프리 리프</p>
+                        </a>
+                    </li>
+                    <li class= "item2">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab2_off.gif" alt="">
+                            <p>17세기부터 이어진 식물과학의 결정체. 그 이름이 증명하듯 여성을 위한 보습허브, 레이디맨틀</p>
+                        </a>
+                    </li>
+                    <li class= "item3">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab3_off.gif" alt="">
+                            <p>빌리프가 찾은 에센스에 대한 해답 24시간 지속되는 놀라운 보습력에 영양과 탄력! 에센스의 본질에 충실한 에센스</p>
+                        </a>
+                    </li>
+                    <li class= "item4">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab4_off.gif" alt="">
+                            <p>젊음의 비밀을 간직한 매혹적인 비밀의 물 헝가리언 워터를 아시나요? 헝가리언 워터의 동안 비법이 담겨진 '빌리프 헝가리언 워터 에센스'</p>
+                        </a>
+                    </li>
+                    <li class= "item5">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab7_off.gif" alt="">
+                            <p>세안 후 10초 안에 수분을 잡는 욕실 에센스 건조함과 싸우는 악마의 시간 10초 만에 사라져버리는 수분을 지켜주는 욕실 전용 수분 수호 에센스</p>
+                        </a>
+                    </li>
+                    <li class= "item6">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab8_off.gif" alt="">
+                            <p>건조주의보 발령에도 걱정 없는 궁극의 보습&영양 크림 건조주의보 발령 가능 조건에서도 피부 보습력을 43%개선하고, 피부 장벽을 강화하는 '클래식 크림'</p>
+                        </a>
+                    </li>
+                    <li class= "item7">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab10_off.gif" alt="">
+                            <p>보습력과 피부 커버력이 26시간 지속되는 수분 폭탄 쿠션 빌리프 폭탄 크림의 보습성분을 그대로 담아 26시간 촉촉함이 지속되는 수분 폭탄 쿠션! 피부 결점을 자연스럽고 꼼꼼하게 커버하여 생기있고 깨끗한 피부를 연출해 줍니다.</p>
+                        </a>
+                    </li>
+                    <li class= "item8">
+                        <a href="shop.html">
+                            <img src="./사이트사진/베스트/productStory_tab11_off.gif" alt="">
+                            <p>영양감 있고 쫀쫀한 텍스쳐가 피부 깊숙이 스며들어, 매끄러운 피부결과 촘촘하고 탄력 있는 피부로 가꿔주는 고농축 안티에이징 세럼</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="board_main">
+            <div class="board">
+                <div class="left">
+                    <h4><a href="">공지사항</a></h4>
+                    <ul class="news_mini_main_left">
+                        <li><a href="">시스템 점검 안내</a></li>
+                        <li><a href="">빌리프 폭탄 팝콘 카가 찾아갑니다!</a></li>
+                        <li><a href="">belif X 360sounds summer madness</a></li>
+                        <li><a href="">빌리프 폭탄 크림 카가 찾아갑니다!</a></li>
+                        <li><a href="">시스템 점검 안내</a></li>
+                    </ul>
+                </div>
+                <div class="right">            
+                    <h4><a href="">홍보센터</a></h4>
+                    <ul class="pr_mini_main_right">
+                        <li><a href="">belif Mini Magazine March. 2020</a></li>
+                        <li><a href="">belif Mini Magazine February. 2020</a></li>
+                        <li><a href="">belif Mini Magazine December. 2019</a></li>
+                        <li><a href="">belif Mini Magazine August. 2019</a></li>
+                        <li><a href="">	belif Mini Magazine July. 2019</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="ft">
+            <div class="ft_wrap">
+                 <div class="ft_top_wrap">
+                    <ul>
+                        <li>
+                            <h4>C/S</h4>
+                            <span>1899-5031</span>
+                            <span>MON-FRI AM 09:00 - PM 06:00</span>
+                            <span>CLOSED</span>
+                            <span>AM 12:00 - PM 01:00</span>
+                            <span>& WEEKEND & HOLIDAYS</span>
+                        </li>
+                        <li>
+                            <h4>INFORMATION</h4>
+                            <span>상호 (주)대웅제약 대표 대표이사 전승호 사업자등록번호 124-86-01143</span>
+                            <span>통신판매업 신고 제2019-화성향남-0140호 [사업자정보확인]</span>
+                            <span>전화 1899-5031 주소 경기도 화성시 향남읍 제약공단4길 35-14 대웅제약</span>
+                            <span>개인정보관리책임자 박영호 (mallcs@daewoong.co.kr)</span>
+                        </li>
+                        <li>
+                            <h4>COMPANY</h4>
+                            <a href="">이미지<img src="" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft_bottom_wrap">
+                    <ul>
+                        <li><a href="">서비스가입사실확인</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보취급방침</a></li>
+                        <li><a href="">이용안내</a></li>
+                    </ul>
+                    <p>© COPYRIGHT Yuk. All rights reserved. </p>
+                </div>
+            </div>
+        </footer>
+                </div>                    
+            </div>
+        </footer>
+    
+</body>
+</html>
